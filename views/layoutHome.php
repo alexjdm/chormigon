@@ -90,7 +90,7 @@
             <h2>Proyecto</h2>
             <h4>El sitio permite guardar un archivo de memoria en formato pdf, con el detalle de los elementos diseñados en hormigón armado.</h4>
 
-            <div class="col-md-4 col-sm-12">
+            <!--<div class="col-md-4 col-sm-12">
                 <div class="single-about-detail clearfix">
 
                     <div class="about-details">
@@ -104,9 +104,9 @@
                             <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Descripción" value=""></p>
                     </div>
                 </div>
-            </div>
+            </div>-->
 
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-6 col-sm-6">
                 <div class="single-about-detail">
 
                     <div class="about-details">
@@ -126,7 +126,7 @@
             </div>
 
 
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-6 col-sm-6">
                 <div class="single-about-detail">
 
                     <div class="about-details">
@@ -137,7 +137,7 @@
                         <h3>Carga de documento</h3>
                         <p>Ingresar datos desde un archivo Excel.</p>
                         <br>
-                        <div style="text-align: center;"><input type="file" class="btn btn-default btn-xs" id="inputfile"></div>
+                        <center><input type="file" class="btn btn-default btn-xs" id="inputfile"></center>
                         <br><br>
                     </div>
                 </div>

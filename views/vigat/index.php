@@ -544,7 +544,7 @@
             }
         }
 
-        observeBoolean('hasControls');
+        /*observeBoolean('hasControls');
         observeBoolean('hasBorders');
         observeBoolean('hasRotatingPoint');
         observeBoolean('visible');
@@ -560,7 +560,7 @@
         observeNumeric('borderColor');
         observeNumeric('cornerColor');
 
-        observeOptionsList('setControlVisible');
-    })();
+        observeOptionsList('setControlVisible');*/
+    });
 
 </script>
