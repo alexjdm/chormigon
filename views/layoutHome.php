@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="dist/home/css/login.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=BenchNine:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
@@ -90,6 +91,8 @@
             <h2>Proyecto</h2>
             <h4>El sitio permite guardar un archivo de memoria en formato pdf, con el detalle de los elementos diseñados en hormigón armado.</h4>
 
+            <a href="index.php?controller=Home&action=index" class="btn btn-primary btn-lg">Ingresar al sistema</a>
+
             <!--<div class="col-md-4 col-sm-12">
                 <div class="single-about-detail clearfix">
 
@@ -104,7 +107,7 @@
                             <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Descripción" value=""></p>
                     </div>
                 </div>
-            </div>-->
+            </div>
 
             <div class="col-md-6 col-sm-6">
                 <div class="single-about-detail">
@@ -142,6 +145,8 @@
                     </div>
                 </div>
             </div>
+
+            -->
 
         </div>
     </div>

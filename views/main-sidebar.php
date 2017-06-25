@@ -27,11 +27,11 @@
 
         <!-- Sidebar Menu -->
         <ul class="sidebar-menu">
-            <li class="header">Tipo de Estructura</li>
+            <li class="header"><a href="index.php?controller=Home&action=index">Tipo de estructura</a></li>
             <!-- Optionally, you can add icons to the links -->
-            <li class="<?php if($controller=='VigaT'){ echo 'active'; } ?>"><a href="vigat.php"><i class="fa fa-link"></i> <span>Viga T</span></a></li>
-            <li class="<?php if($controller=='VigaRect'){ echo 'active'; } ?>"><a href="vigarect.php"><i class="fa fa-link"></i> <span>Viga Rect</span></a></li>
-            <li class="<?php if($controller=='PilarRect'){ echo 'active'; } ?>"><a href="pilarrect.php"><i class="fa fa-link"></i> <span>Pilar Rect</span></a></li>
+            <li class="<?php if($controller=='VigaT'){ echo 'active'; } ?>"><a href="index.php?controller=VigaT&action=index"><i class="fa fa-link"></i> <span>Viga T</span></a></li>
+            <li class="<?php if($controller=='VigaRectangular'){ echo 'active'; } ?>"><a href="index.php?controller=VigaRectangular&action=index"><i class="fa fa-link"></i> <span>Viga Rect</span></a></li>
+            <li class="<?php if($controller=='PilarRectangular'){ echo 'active'; } ?>"><a href="index.php?controller=PilarRectangular&action=index"><i class="fa fa-link"></i> <span>Pilar Rect</span></a></li>
         </ul><!-- /.sidebar-menu -->
 
     </section>

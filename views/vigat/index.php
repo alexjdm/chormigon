@@ -274,8 +274,11 @@
 
             </div><!-- /.box -->
         </div><!-- /.col (left) -->
-        <div class="col-md-6">
+        <div id="dibujo" class="col-md-6">
             <canvas id="c" class="upper-canvas " width="600" height="500" style="position: absolute; width: 600px; height: 500px; left: 0; top: 0; -webkit-user-select: none; cursor: default;"></canvas>
+        </div>
+        <div id="resultado" class="col-md-6">
+
         </div>
     </div>
 
@@ -286,6 +289,8 @@
 
 
 <script>
+
+    $('#resultado').hide();
 
     var Nombre;
     var UniLongitud;
@@ -407,14 +412,19 @@
                 data: data,
                 dataType : "json",
                 beforeSend: function () {
+                    console.debug("Before");
                     $('#cargasNext').html("Cargando...");
                 },
                 success: function (data) {
-                    console.debug(data);
+                    console.log("Success");
+                    console.log(data);
                     //var returnedData = JSON.parse(data); console.debug(returnedData);
-                    $('#respuesta').html(data.responseText);
+                    $('#resultado').html('data);
+                    $('#resultado').show();
+                    $('#dibujo').hide();
                     if(data.status == "success"){
-                        $('#respuesta').html('data');
+                        $('#resultado').html('data');
+                        $('#resultado').show();
                         $('#cargasNext').html('Calcular');
                     }
                     else{
@@ -424,6 +434,7 @@
                     return false;
                 },
                 error: function (data) {
+                    console.debug("Error");
                     console.debug(data);
                     //var returnedData = JSON.parse(data); console.debug(returnedData);
                     $('#cargasNext').html("Agregar");

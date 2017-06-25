@@ -11,7 +11,7 @@
     //$action     = 'login';
   }
 
-  if($controller == 'VigaT' || $controller == 'VigaRectangular' || $controller == 'PilarRectangular')
+  if($controller == 'Home' || $controller == 'VigaT' || $controller == 'VigaRectangular' || $controller == 'PilarRectangular')
   {
     //require_once('views/routes.php');
       require_once('views/layout.php');

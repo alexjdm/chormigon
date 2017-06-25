@@ -1,15 +1,23 @@
 <?php
 
+include_once("BusinessLogic/BusinessLogic.php");
+
 class VigaTController {
 
-public $model;
+    public $BLVigaT;
+
+    public function __construct()
+    {
+        $this->BLVigaT = new VigaT();
+    }
 
     public function index() {
         require_once('views/vigat/index.php');
     }
 
     public function calculate() {
-        require_once('BusinessLogic/checkVigaT.php');
+
+        return $this->BLVigaT->checkVigaT();
     }
 
     public function error() {
