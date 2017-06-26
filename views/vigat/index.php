@@ -45,7 +45,7 @@
 <section class="content">
 
     <div class="row">
-        <div class="col-md-6">
+        <div id="datos" class="col-md-6">
             <div class="box box-info">
                 <div class="box-header with-border">
                     <h3 class="box-title">Ingresa datos</h3>
@@ -277,7 +277,7 @@
         <div id="dibujo" class="col-md-6">
             <canvas id="c" class="upper-canvas " width="600" height="500" style="position: absolute; width: 600px; height: 500px; left: 0; top: 0; -webkit-user-select: none; cursor: default;"></canvas>
         </div>
-        <div id="resultado" class="col-md-6">
+        <div id="resultado" class="col-md-12">
 
         </div>
     </div>
@@ -416,15 +416,29 @@
                     $('#cargasNext').html("Cargando...");
                 },
                 success: function (data) {
-                    console.log("Success");
                     console.log(data);
                     //var returnedData = JSON.parse(data); console.debug(returnedData);
-                    $('#resultado').html('data);
-                    $('#resultado').show();
-                    $('#dibujo').hide();
+
                     if(data.status == "success"){
-                        $('#resultado').html('data');
+                        console.log("Success");
+                        console.log(JSON.stringify(data));
+                        //$('#resultado').html(JSON.stringify(data));
+
+                        $.each(data, function(i, v) {
+                            // For each record in the returned array
+
+                            if(i != "status")
+                            {
+                                console.log(i);
+                                console.log(v);
+                                $('#resultado').append("<p>").append(i).append(" = ").append(v).append("</p>");
+                            }
+
+                        });
+
                         $('#resultado').show();
+                        $('#datos').hide();
+                        $('#dibujo').hide();
                         $('#cargasNext').html('Calcular');
                     }
                     else{

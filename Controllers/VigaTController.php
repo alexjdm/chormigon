@@ -1,6 +1,6 @@
 <?php
 
-include_once("BusinessLogic/BusinessLogic.php");
+include_once("BusinessLogic/VigaT.php");
 
 class VigaTController {
 
@@ -17,7 +17,8 @@ class VigaTController {
 
     public function calculate() {
 
-        return $this->BLVigaT->checkVigaT();
+        //return $this->BLVigaT->checkVigaT();
+        return $this->BLVigaT->checkCorteVigaT();
     }
 
     public function error() {
